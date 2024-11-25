@@ -1,0 +1,21 @@
+CREATE TABLE Employee (
+Employee_ID INT PRIMARY KEY,
+Name VARCHAR(50),
+Department VARCHAR(50),
+Salary DECIMAL(10, 2)
+);
+ALTER TABLE Employee ADD Email VARCHAR(100);
+INSERT INTO Employee(Employee_ID,Name,Department,Salary)
+VALUES(1, 'John Doe','IT',5000.00);
+SELECT * FROM EMPLOYEE
+INSERT INTO Employee(Employee_ID,Name,Department,Salary,Email)
+VALUES(2, 'JANE Doe','HR',6500.00, 'jane.doe@example.com');
+SELECT * FROM EMPLOYEE
+UPDATE EMPLOYEE
+SET SALARY = 5500
+WHERE Employee_ID = 1;
+
+UPDATE Employee
+set Email = 'John Doe50@example.com'
+
+SELECT Name, Email FROM EMPLOYEE
